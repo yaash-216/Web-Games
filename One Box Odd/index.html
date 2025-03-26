@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>One Box odd</title>
+</head>
+
+<body class="h-screen">
+    <div id="container" class="hidden flex h-screen w-screen justify-center content-center backdrop-blur-xs">
+        <div class="flex flex-col justify-center content-center">
+            <h1 id="result" class="text-center text-black font-black text-4xl"></h1>
+            <button onclick="location.reload()"
+                class="bg-cyan-500 rounded cursor-pointer  p-2 text-xl text-semibold">Restart Game</button>
+        </div>
+    </div>
+    <a href="." class="text-3xl block font-bold text-center hover:underline hover:text-red-400">One Box Odd</a>
+    <div class="flex justify-center content-center h-full">
+        <div class="flex flex-col justify-center content-center">
+            <div class="flex">
+                <div id="box1" onclick="DetectTap(1)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box2" onclick="DetectTap(2)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box3" onclick="DetectTap(3)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box4" onclick="DetectTap(4)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box5" onclick="DetectTap(5)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+            </div>
+            <div class="flex">
+                <div id="box6" onclick="DetectTap(6)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box7" onclick="DetectTap(7)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box8" onclick="DetectTap(8)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box9" onclick="DetectTap(9)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box10" onclick="DetectTap(10)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+            </div>
+            <div class="flex">
+                <div id="box11" onclick="DetectTap(11)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box12" onclick="DetectTap(12)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box13" onclick="DetectTap(13)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box14" onclick="DetectTap(14)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box15" onclick="DetectTap(15)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+            </div>
+            <div class="flex">
+                <div id="box16" onclick="DetectTap(16)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box17" onclick="DetectTap(17)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box18" onclick="DetectTap(18)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box19" onclick="DetectTap(19)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box20" onclick="DetectTap(20)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+            </div>
+            <div class="flex">
+                <div id="box21" onclick="DetectTap(21)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box22" onclick="DetectTap(22)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box23" onclick="DetectTap(23)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box24" onclick="DetectTap(24)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box25" onclick="DetectTap(25)"
+                    class="size-14 sm:size-16 bg-[#9f9fa9] rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+            </div>
+            <p id="para" class="text-center">Remaining box are 24</p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
