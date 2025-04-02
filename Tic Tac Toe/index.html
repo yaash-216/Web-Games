@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body class="h-screen">
+    <div id="container" class="hidden flex h-screen w-screen justify-center content-center backdrop-blur-xs">
+        <div class="flex flex-col justify-center content-center">
+            <h1 id="result" class="text-center text-black font-black text-4xl"></h1>
+            <button onclick="location.reload()"
+                class="bg-cyan-500 rounded cursor-pointer  p-2 text-xl text-semibold">Restart Game</button>
+        </div>
+    </div>
+    <a href="." class="text-3xl block font-bold text-center hover:underline hover:text-red-400">Tic Tac Toe</a>
+    <div class="flex justify-center content-center h-full">
+        <div class="flex flex-col justify-center content-center">
+            <div class="flex">
+                <h1 id="turn" class="text-3xl text-gray-500 text-center w-full my-3">Player X Turn</h1>
+            </div>
+            <div class="flex">
+                <div id="box1" onclick="DetectTap(1)"
+                    class="size-20  flex justify-center items-center text-3xl border-2 rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box2" onclick="DetectTap(2)"
+                    class="size-20  flex justify-center items-center text-3xl border-2 rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box3" onclick="DetectTap(3)"
+                    class="size-20  flex justify-center items-center text-3xl border-2 rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+            </div>
+            <div class="flex">
+                <div id="box4" onclick="DetectTap(4)"
+                    class="size-20  flex justify-center items-center text-3xl border-2 rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box5" onclick="DetectTap(5)"
+                    class="size-20  flex justify-center items-center text-3xl border-2 rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box6" onclick="DetectTap(6)"
+                    class="size-20  flex justify-center items-center text-3xl border-2 rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+            </div>
+            <div class="flex">
+                <div id="box7" onclick="DetectTap(7)"
+                    class="size-20  flex justify-center items-center text-3xl border-2 rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box8" onclick="DetectTap(8)"
+                    class="size-20  flex justify-center items-center text-3xl border-2 rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+                <div id="box9" onclick="DetectTap(9)"
+                    class="size-20  flex justify-center items-center text-3xl border-2 rounded m-1 hover:scale-105 cursor-pointer">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
