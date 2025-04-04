@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guess</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <div
+      class="h-screen flex flex-col justify-center items-center bg-[#242424]"
+    >
+      <div
+        class="bg-gray-500 w-170 h-8 rounded-t-sm flex gap-4 items-center px-2"
+      >
+        <div class="rounded-full size-4 bg-red-500"></div>
+        <div class="rounded-full size-4 bg-green-500"></div>
+        <div class="rounded-full size-4 bg-yellow-500"></div>
+        <h1 class="text-center w-full font-bold text-white font-mono">
+          Number Guess
+        </h1>
+      </div>
+      <div
+        id="screen"
+        class="bg-black w-170 h-100 rounded-b-sm p-4 font-semibold"
+      >
+        <p class="text-white">Enter no btw 1 to 100</p>
+        <input
+          maxlength="2"
+          id="get_text"
+          type="text"
+          class="outline-0 text-white"
+        />
+        <button class="text-red-400 cursor-pointer" onclick="handleclick()">
+          submit
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
